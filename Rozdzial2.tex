@@ -2,35 +2,69 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Opis technologii użytych do stworzenia aplikacji mobilnej}
-Aplikacja mobilna stworzona w ramach tej pracy inżynierskiej wykorzystuje zaawansowane technologie programistyczne, bazy danych i platformy wspomagające analizę czasu reakcji. Wykorzystanie wspomnianych technologii stanowi integralną część projektu, umożliwiającą nie tylko efektywne monitorowanie parametrów fizjologicznych, ale także zapewniającą skalowalność i łatwą dostępność danych dla analizy i interpretacji wyników badań. Poniżej przedstawiono kluczowe elementy technologiczne zastosowane w aplikacji:
+Aplikacja mobilna wykorzystuje zaawansowane technologie programistyczne, bazy danych i platformy wspomagające analizę czasu reakcji. Wykorzystanie wspomnianych technologii stanowi integralną część projektu, umożliwiającą nie tylko efektywne monitorowanie parametrów fizjologicznych, ale także zapewniającą skalowalność i łatwą dostępność danych dla analizy i interpretacji wyników badań. Poniżej przedstawiono kluczowe elementy technologiczne zastosowane w aplikacji:
 \subsection{Android Studio i Java}
 \begin{itemize}
-    \item Aplikacja mobilna została zaimplementowana w środowisku Android Studio, wykorzystując język programowania Java
-    \item Android Studio jest oficjalnym środowiskiem programistycznym dla platformy Android, umożliwiającym efektywną i zintegrowaną pracę nad projektami
+    \item Aplikacja mobilna została zaimplementowana w środowisku Android Studio, wykorzystując język programowania Java.
+    \item Android Studio jest oficjalnym środowiskiem programistycznym dla platformy Android, umożliwiającym efektywną i zintegrowaną pracę nad projektami.
 \end{itemize}
 \subsection{Firebase}
 \begin{itemize}
-    \item Do przechowywania i zarządzania danymi aplikacji wykorzystano Firebase, kompleksową platformę usług od Google
-    \item Firebase Realtime Database została użyta do trwałego przechowywania danych dotyczących czasu reakcji, saturacji krwi i fali tętna, zapewniając synchronizację w czasie rzeczywistym
+    \item Do przechowywania i zarządzania danymi aplikacji wykorzystano Firebase, kompleksową platformę usług od Google.
+    \item Firebase Realtime Database została użyta do trwałego przechowywania danych dotyczących czasu reakcji, saturacji krwi i fali tętna, zapewniając synchronizację w czasie rzeczywistym.
 \end{itemize}
 \subsection{Gradle}
 \begin{itemize}
-    \item System budowania projektu oparty na Gradle został użyty do efektywnego zarządzania zależnościami, konfiguracji i budowania aplikacji
-    \item Gradle ułatwia integrację różnych modułów aplikacji, w tym Firebase, co przyczynia się do płynnego procesu tworzenia i aktualizacji projektu
+    \item System budowania projektu oparty na Gradle został użyty do efektywnego zarządzania zależnościami, konfiguracji i budowania aplikacji.
+    \item Gradle ułatwia integrację różnych modułów aplikacji, w tym Firebase, co przyczynia się do płynnego procesu tworzenia i aktualizacji projektu.
 \end{itemize}
 \subsection{GitHub}
 \begin{itemize}
-    \item Repozytorium kodu źródłowego aplikacji zostało umieszczone na platformie GitHub
-    \item GitHub umożliwia kontrolę wersji, efektywne zarządzanie kodem źródłowym, współpracę programistyczną i udostępnianie postępów pracy nad projektem
+    \item Repozytorium kodu źródłowego aplikacji zostało umieszczone na platformie GitHub.
+    \item GitHub umożliwia kontrolę wersji, efektywne zarządzanie kodem źródłowym, współpracę programistyczną i udostępnianie postępów pracy nad projektem.
 \end{itemize}
 \subsection{Optymalizacja dla Precyzyjnych Pomiarów}
 \begin{itemize}
-    \item Podczas implementacji zwrócono uwagę na optymalizację aplikacji pod kątem precyzyjnych pomiarów, aby gwarantować dokładność wyników czasu reakcji
+    \item Podczas implementacji zwrócono uwagę na optymalizację aplikacji pod kątem precyzyjnych pomiarów, aby gwarantować dokładność wyników czasu reakcji.
 \end{itemize}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Opis implementacji układu pomiarowego}
+Stworzony został kompleksowy układ pomiarowy, umożliwiający zbieranie danych dotyczących czasu reakcji, saturacji krwi i fali tętna. Poniżej przedstawiono szczegółowy opis implementacji poszczególnych komponentów układu:
+\subsection{Mikrokontroler Arduino Nano}
+\begin{itemize}
+    \item Do sterowania układem wykorzystano mikrokontroler Arduino Nano, który jest kompaktowym, ale wydajnym układem programowalnym.
+    \item Mikrokontroler ten odpowiada za odbiór danych z czujnika MAX30102, ich przetwarzanie oraz kontrolę wyświetlacza OLED.
+\end{itemize}
+\subsection{Czujnik Pulsoksymetryczny MAX30102}
+\begin{itemize}
+    \item Głównym elementem pomiarowym układu jest czujnik MAX30102, dedykowany do precyzyjnego pomiaru saturacji krwi i fali tętna.
+    \item Czujnik ten jest umieszczony na palcu, co pozwala na bezpośrednią i komfortową akwizycję danych odnośnie parametrów fizjologicznych.
+\end{itemize}
+\subsection{Wyświetlacz OLED 128x64}
+\begin{itemize}
+    \item Do wizualizacji wyników pomiarów zastosowano wyświetlacz OLED o rozdzielczości 128x64 pikseli.
+    \item Wyświetlacz umożliwia intuicyjne prezentowanie informacji na bieżąco, co jest istotne zarówno dla użytkownika, jak i podczas procesu kalibracji układu.
+\end{itemize}
+\subsection{Konwerter LM2695}
+\begin{itemize}
+    \item Aby zoptymalizować zasilanie układu, skorzystano z konwertera napięcia LM2695.
+    \item Konwerter ten umożliwia efektywną konwersję napięcia z akumulatora Li-ion na poziomy napięcia potrzebne do zasilania poszczególnych komponentów.
+\end{itemize}
+\subsection{Akumulator Li-ion LG INR21700-M50LT}
+\begin{itemize}
+    \item Jako źródło zasilania zastosowano akumulator Li-ion LG INR21700-M50LT o pojemności 4800mAh i zdolności do dostarczania prądu o wartości 15A.
+    \item Akumulator ten jest nie tylko kompaktowy, ale także dostarcza wystarczającą moc dla długotrwałego funkcjonowania układu.
+\end{itemize}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Omówienie metodyki pomiarów czasu reakcji, saturacji krwi i fali tętna}
+Proces badawczy został skoncentrowany na kompleksowej analizie parametrów fizjologicznych, takich jak czas reakcji, saturacja krwi i fala tętna, przyjmując unikalną metodykę pomiarów. Eksperyment rozpoczyna się od spokojnych pomiarów w warunkach spoczynku, co stanowi punkt odniesienia dla dalszych badań.
 
+Następnie uczestnicy zostali przeniesieni do symulacji wysiłku fizycznego, umieszczając ich na rowerach stacjonarnych marki X. Ta aktywność ma na celu naśladowanie różnych poziomów wysiłku fizycznego, od osób nieaktywnych fizycznie po doświadczonych kolarzy i himalaistów.
+
+Podczas testów na rowerze stacjonarnym, uczestnicy oddychają przez słomkę, co ma na celu symulację trudności w dostępie do tlenu, zbliżonej do warunków napotykanych przez himalaistów w tzw. "dead zone". Jest to obszar w wysokich partiach gór, gdzie zawartość tlenu jest niewystarczająca do podtrzymywania życia.
+
+Wartości saturacji krwi były rejestrowane w warunkach symulujących "dead zone", umożliwiając nam zrozumienie, jak organizm reaguje na ekstremalne warunki atmosferyczne.
+
+Wszystkie dane były notowane na bieżąco na kartkach pomiarowych, a precyzję pomiarów oraz czas trwania aktywności były monitorowane za pomocą stoperów. Takie podejście pozwoliło na uzyskanie pełnego obraz reakcji organizmu na różne poziomy aktywności fizycznej oraz zidentyfikowanie wpływu ekstremalnych warunków atmosferycznych na badane parametry fizjologiczne.

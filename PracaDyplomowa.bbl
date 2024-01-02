@@ -1,3 +1,15 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{1}
+
+\bibitem{MVP}
+{Florina Muntenescu}.
+\newblock {Android Architecture Patterns Part 2: Model-View-Presenter}.
+\newblock
+  \url{https://medium.com/upday-devs/android-architecture-patterns-part-2-model-view-presenter-8a6faaae14a5},
+  2016.
+
+\bibitem{github}
+{Szymon Chmielewski}.
+\newblock {Reflex-App-Java-Firebase}.
+\newblock \url{https://github.com/Szym0nion/Reflex-App-Java-Firebase}, 2023.
 
 \end{thebibliography}
