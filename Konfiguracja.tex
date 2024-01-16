@@ -1,0 +1,222 @@
+% Ustawienie wymaganej dokumentami SZJK czcionki 
+\usepackage[sfdefault]{carlito}
+
+% \usepackage{fontspec}
+% \setmainfont{Barlow}
+
+% Dołączenie pakietów wprowadzających częściowe spolszczenie
+\usepackage{polski}
+
+% Ustawienie interlinii
+\linespread{1.5}
+
+% Ustawienie metadanych w pliku pdf
+\author{\Autor}
+\title{\TematPracy}
+\date{\Rok}
+\AtBeginDocument{
+    \hypersetup{
+        pdftitle=\TematPracy,
+        pdfauthor=\Autor,
+        pdfsubject=\TematPracyANG,
+        pdfkeywords=\SlowaKluczowe}
+}
+
+% Ustawienie kropek po numerach sekcji (różnych poziomów)
+% UWAGA - nie dodaje kropek po nr sekcji w spisie treści
+\usepackage{secdot}
+\sectiondot{section}
+\sectiondot{subsection}
+\sectiondot{subsubsection}
+
+% Dołączenie pakietu umożliwiającego manipulację tekstem małe/wielkie litery nazwy własne itp.
+\usepackage{mfirstuc}
+\usepackage{xstring}
+
+% Dołącz i skonfiguruj pakiet zapewniający aktywne i kolorowe hiperłącza
+\usepackage[colorlinks]{hyperref}
+
+% Dołącz pakiet umożliwiający generację zakładek
+\usepackage{bookmark}
+
+% Deklaracja nowego licznika o nazwie EndOfTOC (będzie przechowywał nr strony, na której kończą się spisy treści, rysunków...)
+\newcounter{EndOfTOC}
+
+\usepackage{geometry}
+\geometry{
+	paper = a4paper,
+	top = 2.5cm,
+	bottom = 2.5cm,
+	inner = 2.5cm,
+	outer = 2.5cm,
+	bindingoffset = 1cm,
+	headheight = 1.25cm,
+	footskip = 1.35cm,
+% 	showframe,
+}
+
+% Dołączenie pakietu umożliwiającego definiowanie stylów stron 
+\usepackage{fancyhdr}
+% Definicje stylów stron 
+\fancypagestyle{SpisPierwsza}{
+	\renewcommand{\headrulewidth}{0pt}
+	\renewcommand{\footrulewidth}{1pt}
+	\fancyhead[RO,RE]{}
+	\fancyhead[LO,LE]{}
+	\fancyhead[CO,CE]{}
+	\fancyfoot[CO,CE]{\thepage}
+}
+\fancypagestyle{Spis}{
+	\renewcommand{\headrulewidth}{1pt}
+	\renewcommand{\footrulewidth}{1pt}
+	\fancyhead[RO,RE]{}
+	\fancyhead[LO,LE]{}
+	\fancyhead[CO,CE]{\nouppercase{\rightmark}}
+	\fancyfoot[CO,CE]{\thepage}
+}
+\fancypagestyle{plain}{
+	\renewcommand{\headrulewidth}{0pt}
+	\renewcommand{\footrulewidth}{1pt}
+	\fancyhead[RO]{}
+	\fancyhead[LE]{}
+	\fancyhead[RE]{}
+	\fancyhead[LO]{}
+	\fancyhead[CO,CE]{}
+	\fancyfoot[RO]{}
+	\fancyfoot[LE]{}
+	\fancyfoot[CO,CE]{\thepage}
+	\fancyfoot[RE,LO]{}
+}
+\fancypagestyle{Praca}{
+	\renewcommand{\headrulewidth}{1pt}
+	\renewcommand{\footrulewidth}{1pt}
+	\fancyhead[RO]{\nouppercase{\rightmark}}
+	\fancyhead[LE]{\nouppercase{\leftmark}}
+	\fancyhead[RE]{}
+	\fancyhead[LO]{}
+	\fancyhead[CO,CE]{}
+	\fancyfoot[RO]{}
+	\fancyfoot[LE]{}
+	\fancyfoot[CO,CE]{\thepage}
+	\fancyfoot[RE,LO]{}	
+}
+
+% Dołączenie pakietu umożliwiającego manipulację spisem treści
+\usepackage{tocloft}
+% Ustaw spis treści tak, by po numerze rozdziału i sekcjach różnego poziomu w spisie treści była kropka
+\renewcommand{\cftchapaftersnum}{.}%
+\renewcommand{\cftsecaftersnum}{.}%
+\renewcommand{\cftsubsecaftersnum}{.}%
+\renewcommand{\cftsubsubsecaftersnum}{.}%
+\renewcommand{\cftparaaftersnum}{.}%
+\renewcommand{\cftsubparaaftersnum}{.}%
+% Ustaw spis rysunków i tabel tak, by po numerze rysunku/tabeli w spisie rys/tab była kropka
+\renewcommand{\cftfigaftersnum}{.}%
+\renewcommand{\cfttabaftersnum}{.}%
+
+
+% Pakiety i ustawienia dotyczące grafik
+\usepackage{graphicx}
+\graphicspath{{./Ilustracje/}}
+\usepackage{subfig}
+\usepackage{caption}
+\captionsetup{labelsep=period}
+\renewcommand{\figurename}{Rys.}
+\renewcommand{\tablename}{Tab.}
+
+% Skorowidz haseł
+\usepackage{makeidx}
+\makeindex
+\usepackage{idxlayout}
+
+% Wykaz oznaczeń
+\usepackage{nomencl}
+\makenomenclature
+
+% Definicje zmiennych binarnych sterujących obecnością Skorowidza haseł, Wykazu oznaczeń, Spisów rys/tab/listingów
+\newboolean{SpisRysunkow}
+\newboolean{SpisTabel}
+\newboolean{SpisProgramow}
+\newboolean{SpisOznaczen}
+\newboolean{Skorowidz}
+
+% Definicje układu stron rozpoczynających rozdziały
+\makeatletter
+\def\@makechapterhead#1{%
+  \vspace*{5cm}%
+  {\parindent \z@ \raggedright \normalfont
+    \ifnum \c@secnumdepth >\m@ne
+        \huge\bfseries
+        \thechapter.\ 
+        \nobreakspace{}
+    \fi
+    \interlinepenalty\@M
+    \huge
+    \bfseries #1\par\nobreak
+    \vskip 40\p@
+  }}
+\makeatother
+
+\makeatletter
+\def\@makeschapterhead#1{%
+  \vspace*{5cm}%
+  {\parindent\z@\raggedright\normalfont%
+    \ifnum\c@secnumdepth>\m@ne%
+        \huge\bfseries%
+        \nobreakspace{}
+    \fi
+    \interlinepenalty\@M%
+    \huge
+    \bfseries #1\par\nobreak%
+    \vskip 40\p@%
+  }}
+\makeatother
+
+% Definicje poleceń
+\newcommand{\DolaczRozdzial}[1]{
+    \input{#1}
+    \clearpage{\pagestyle{empty}\cleardoublepage}
+}
+
+\newcommand{\Bibliografia}[2]{
+    \bibliographystyle{#1}
+    \addcontentsline{toc}{chapter}{\bibname}
+    \bibliography{#2}
+    \clearpage{\pagestyle{empty}\cleardoublepage}
+}
+
+\newcommand{\Skorowidz}{
+    \ifthenelse{\boolean{Skorowidz}}
+    {
+        \printindex
+        \addcontentsline{toc}{chapter}{\indexname}
+        \clearpage{\pagestyle{empty}\cleardoublepage}
+    }
+    {}
+}
+
+% Dołączenie pakietu, konfiguracja wypunktowań, definicja nowego konspektu listy numerowanej
+\usepackage{enumitem}
+\setlist{topsep=0pt,itemsep=0pt,partopsep=0pt,parsep=0pt}%
+\newlist{inparaenum}{enumerate}{3}%
+\setlist[inparaenum]{nosep}%
+\setlist[inparaenum,1]{label=\arabic*.}%
+\setlist[inparaenum,2]{label=\arabic{inparaenumi}.\arabic*.}%
+\setlist[inparaenum,3]{label=\arabic{inparaenumi}.\arabic{inparaenumii}.\arabic*.}%
+
+% Dołączenie pakietów i konfiguracja narzędzi do umieszczania kodów programów
+\usepackage{fancyvrb}
+\usepackage{listings}
+\renewcommand{\lstlistingname}{Program}
+\usepackage{listingsutf8}
+% Ustaw spis programów tak, by po numerze programu (listingu) w spisie programów była kropka
+\usepackage{xpatch}
+\makeatletter
+\xpatchcmd\lst@MakeCaption{\protect\numberline{\thelstlisting}\lst@@caption}{\protect\numberline{\thelstlisting.}\lst@@caption}{}{}
+\makeatother
+
+% Dołączenie dodatkowych pakietów wspomagających używanie bibliografii, tabel...
+\usepackage{cite}
+\usepackage{url}
+\usepackage{array}
+\usepackage{multirow}

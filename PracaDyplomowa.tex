@@ -1,0 +1,115 @@
+\documentclass[a4paper,12pt,twoside,final,onecolumn,openright,titlepage]{book}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Specyfikacja parametrów pracy
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\RodzajPracy}{PROJEKT INŻYNIERSKI}
+\newcommand{\TematPracy}{Pomiar i analiza sygnałów fizjologicznych: fali tętna, saturacji krwi oraz czasu reakcji podczas badania osób nieaktywnych fizycznie, kolarzy oraz himalaistów odbywający trening na rowerze stacjonarnym}
+\newcommand{\Autor}{Szymon CHMIELEWSKI}
+\newcommand{\NumerAlbumu}{298498}
+\newcommand{\KierunekStudiow}{Inżynieria Biomedyczna}
+\newcommand{\SciezkaSpecjalnosc}{Informatyka I Aparatura Medyczna}
+\newcommand{\Promotor}{Dr hab. inż. Paweł Kostka}
+% jeżeli zmienna \Opiekun będzie pusta tzn. \newcommand{\Opiekun}{} hasło OPIEKUN/PROMOTOR POMOCNICZY... nie wydrukuje się
+\newcommand{\Opiekun}{}
+\newcommand{\Wydzial}{Wydział Inżynierii Biomedycznej}
+\newcommand{\Katedra}{KATEDRA Informatyki Medycznej i Sztucznej Inteligencji}
+\newcommand{\Rok}{2024}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\Streszczenie}{Praca inżynierska skupia się na opracowaniu i implementacji aplikacji mobilnej mającej na celu monitorowanie czasu reakcji, oraz stworzeniu układu zbierającego informacje o saturacji krwi i fali tętna. Badania zostały przeprowadzone na trzech różnych grupach pacjentów: osobach nieaktywnych fizycznie, kolarzach oraz himalaistach.
+
+W ramach projektu, opracowano aplikację mobilną, której głównym zadaniem jest pomiar czasu reakcji użytkownika na określone bodźce. Aplikacja została zoptymalizowana pod kątem precyzji pomiarów, a zebrane dane posłużyły do analizy szybkości reakcji w różnych grupach badawczych.
+
+Dodatkowo, zaimplementowano układ pomiarowy zdolny monitorować saturację krwi oraz falę tętna. Układ ten został zastosowany w badaniach na trzech grupach pacjentów. W grupie osób nieaktywnych fizycznie, analizowano wpływ braku aktywności fizycznej na parametry zdrowotne. W przypadku kolarzy, oceniano adaptacje układu krążenia do intensywnego wysiłku fizycznego, natomiast w grupie himalaistów - wpływ ekstremalnych warunków atmosferycznych na parametry krwi.
+
+Wyniki badań wskazują na istotne różnice pomiędzy grupami, co potwierdza zróżnicowane reakcje organizmu w zależności od poziomu aktywności fizycznej i specyfiki wykonywanej działalności. Wyniki te mogą mieć istotne znaczenie dla dziedziny medycyny sportowej oraz rehabilitacji, sugerując konieczność dostosowania programów zdrowotnych do indywidualnych potrzeb pacjentów o różnym stopniu aktywności fizycznej}
+\newcommand{\SlowaKluczowe}{Czas reakcji, Saturacja krwi, Fala tętna, Układ pomiarowy, Grupy pacjentów, Monitorowanie parametrów zdrowotnych, Adaptacyjne układu krążenia, Wysiłek fizyczny, Ekstremalne warunki atmosferyczne, Medycyna sportowa, Rehabilitacja, Analiza wyników badań, Indywidualne potrzeby pacjentów, Badania interdyscyplinarne \newline}
+\newcommand{\TematPracyANG}{Measurement and analysis of physiological signals: pulse wave, blood saturation and reaction time during the study of physically inactive people, cyclists and Himalayan climbers doing training on a stationary bicycle.}
+\newcommand{\StreszczenieANG}{The engineering thesis focuses on the development and implementation of a mobile application aimed at monitoring reaction time, as well as the creation of a system collecting information on blood oxygen saturation and pulse wave. The research was conducted on three different groups of patients: physically inactive individuals, cyclists, and Himalayan climbers.
+
+As part of the project, a mobile application was developed, with its primary task being the measurement of user reaction time to specific stimuli. The application was optimized for measurement precision, and the collected data were used to analyze reaction speed in various research groups.
+
+Additionally, a measurement system capable of monitoring blood oxygen saturation and pulse wave was implemented. This system was applied in studies involving three groups of patients. In the group of physically inactive individuals, the impact of a lack of physical activity on health parameters was analyzed. For cyclists, adaptations of the circulatory system to intense physical exertion were evaluated, while in the Himalayan climber group, the influence of extreme atmospheric conditions on blood parameters was examined.
+
+The research results indicate significant differences between the groups, confirming varied physiological responses depending on the level of physical activity and the nature of the performed activities. These findings may have significant implications for the field of sports medicine and rehabilitation, suggesting the need to tailor health programs to the individual needs of patients with varying degrees of physical activity.}
+\newcommand{\SlowaKluczoweANG}{Reaction Time, Blood Oxygen Saturation, Pulse Wave, Measurement System, Patient Groups, Monitoring Health Parameters, Circulatory System Adaptation, Physical Exertion, Extreme Weather Conditions, Sports Medicine, Rehabilitation, Research Results Analysis, Individual Patient Needs, Interdisciplinary Research.}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\include{Konfiguracja}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Obecność bądź brak spisów i skorowidza
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setboolean{SpisRysunkow}{true}  % domyślnie true
+\setboolean{SpisTabel}{true}     % domyślnie true
+%\setboolean{SpisProgramow}{true} % domyślnie false
+%\setboolean{SpisOznaczen}{true}  % domyślnie false
+%\setboolean{Skorowidz}{true}     % domyślnie false
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Dołączanie własnych pakietów, definiowanie/redefiniowanie poleceń itp.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \input{KonfiguracjaAutora}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % Początkowa część pracy (strona tytułowa, spisy)
+    \input{CzescPoczatkowa}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % Zasadnicza część pracy
+    \mainmatter
+    % Ustawienie licznika stron (page) wcześniej zapamiętaną wartością, pamiętaną w liczniku EndOfTOC
+    \setcounter{page}{\value{EndOfTOC}}
+    
+    % Treść pracy generowana automatycznie (z podziałem na rozdziały i sekcje różnych poziomów) przy użyciu różnych poleceń pakietu blindtext 
+    % Ustawienie stylu stron dla zasadniczej części pracy
+    \pagestyle{Praca}
+    
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % Dołączanie poszczególnych rozdziałów pracy
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+    \DolaczRozdzial{Rozdzial1}
+    \DolaczRozdzial{Rozdzial2}
+    \DolaczRozdzial{Rozdzial3}
+    \DolaczRozdzial{Rozdzial4}
+    \DolaczRozdzial{Rozdzial5}
+    \DolaczRozdzial{Rozdzial6}
+    \DolaczRozdzial{Rozdzial7}
+    \DolaczRozdzial{Rozdzial8}
+    
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % Bibliografia
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+    \phantomsection
+    \Bibliografia{plunsrt}{Bibliografia}
+    
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+    % DODATEK
+    \appendix
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % Dołączanie poszczególnych części/rozdziałów dodatku
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \DolaczRozdzial{Dodatek1}
+    \DolaczRozdzial{Dodatek2}
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % Skorowidz haseł
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+    \Skorowidz
+    
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+\end{document}

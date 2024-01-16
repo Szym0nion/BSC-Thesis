@@ -1,0 +1,121 @@
+    % Początkowa część pracy
+    \frontmatter
+    % Wymuszenie sposobu numeracji stron jako numeracja rzymska, wielkie litery
+    \pagenumbering{Roman}
+    
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % ------------------------------------------ STRONA TYTUŁOWA ------------------------------------------ 
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \renewcommand{\baselinestretch}{1}
+    \begin{titlepage}
+    	\thispagestyle{empty}
+     	\noindent\centering\includegraphics[height=5.2cm]{politechnika_sl_logo_bw_pion_pl_rgb}
+    	\par\noindent\centering\large{\color{white}pusta linia}
+    	\vspace*{12pt}
+    	\par\noindent\centering\Large{\bfseries\scshape\RodzajPracy}
+    	\vspace*{12pt}
+    	\par\noindent\centering\normalsize{\color{white}pusta linia}
+    	\par\noindent\centering\large{\color{white}pusta linia}
+    	\par\noindent\centering\large,,\TematPracy''
+    	\par\noindent\centering\large{\color{white}pusta linia}
+    	\vspace*{12pt}
+    	\par\noindent\centering\large\bfseries\Autor
+    	\par\noindent\centering\normalsize\bfseries\NumerAlbumu
+    	\vspace*{12pt}
+    	\par\noindent\centering\normalsize{\color{white}pusta linia}
+    	\par\noindent\centering\large Kierunek: \KierunekStudiow
+    	\par\noindent\centering\large Specjalność: \SciezkaSpecjalnosc
+    	\par\noindent\centering\large{\color{white}pusta linia}
+    	\par\noindent\centering\large{\color{white}pusta linia}
+    	\par\noindent\centering\large\scshape PROWADZĄCY PRACĘ/PROMOTOR
+    	\par\noindent\centering\large\Promotor
+    	% \par\noindent\centering\large\MakeUppercase\Katedra
+    	\par\noindent\centering\large\MakeLowercase{\capitalisewords{\Katedra}}
+    	\par\noindent\centering\large\MakeLowercase{\capitalisewords{\Wydzial}}
+    	\par\noindent\centering\large{\color{white}pusta linia}
+    	\par\noindent\centering\large{\color{white}pusta linia}
+        \StrLen{\Opiekun}[\mystringlen]
+        \ifthenelse{\mystringlen>1}
+        {
+            \par\noindent\centering\large OPIEKUN/PROMOTOR POMOCNICZY (jeśli został powołany)%
+            \par\noindent\centering\large\Opiekun%
+            \vfill%
+        }
+        {
+            \par\noindent\centering\large%
+            \par\noindent\centering\large%
+            \vfill%
+        }%
+    	\par\noindent\centering\large ZABRZE~\Rok
+    	% Rewers strony tytułowej
+    	\newpage
+    	\thispagestyle{empty}
+    	\renewcommand{\baselinestretch}{1.5}
+    	\flushleft\normalfont\normalsize\justify
+    	\par\noindent{\bfseries Tytuł pracy:}\newline\TematPracy
+        \par\noindent{\bfseries Streszczenie:}\newline\Streszczenie
+        \par\noindent{\bfseries Słowa kluczowe:}\newline\SlowaKluczowe
+        \par\noindent{\bfseries Thesis title:}\newline\TematPracyANG
+        \par\noindent{\bfseries Abstract:}\newline\StreszczenieANG
+        \par\noindent{\bfseries Keywords:}\newline\SlowaKluczoweANG
+    \end{titlepage}
+    % Wymuszenie dodatkowej pustej kartki po stronie tytułowej
+    \clearpage{\pagestyle{empty}\hfill\cleardoublepage}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % ------------------------------------ SPIS TREŚCI, RYSUNKÓW, TABEL -----------------------------------
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % Ustawienie stylu strony dla Spisu treści
+    \tocloftpagestyle{SpisPierwsza}
+    \pagestyle{Spis}
+    % Zapewnia poprawne stworzenie zakładki (bookmark) do spisu treści
+    \phantomsection
+    % Dodaj pozycję 'Spis treści' wraz z numerem strony do spisu treści 
+    \addcontentsline{toc}{chapter}{\contentsname}
+    % Generacja spisu treści
+    \tableofcontents
+    % Wymuszenie pustej strony (jeżeli spis treści nie kończy się na stronie parzystej) po spisie treści
+    \clearpage{\pagestyle{empty}\cleardoublepage}
+    % Generacja spisu rysunków
+    \ifthenelse{\boolean{SpisRysunkow}}
+    {
+        \phantomsection\listoffigures
+        \addcontentsline{toc}{chapter}{\listfigurename}
+        \clearpage{\pagestyle{empty}\cleardoublepage}
+    }
+    {}    
+    % Generacja spisu tabel
+    \ifthenelse{\boolean{SpisTabel}}
+    {
+        \phantomsection\listoftables
+        \addcontentsline{toc}{chapter}{\listtablename}
+        \clearpage{\pagestyle{empty}\cleardoublepage}
+    }
+    {}
+    % Generacja spisu listingów programów
+    \ifthenelse{\boolean{SpisProgramow}}
+    {
+        \renewcommand{\lstlistlistingname}{Spis programów}
+        \phantomsection\lstlistoflistings
+        \addcontentsline{toc}{chapter}{\lstlistlistingname}
+        \clearpage{\pagestyle{empty}\cleardoublepage}
+    }
+    {}    
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % ------------------------------------------- WYKAZ OZNACZEŃ ------------------------------------------
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \ifthenelse{\boolean{SpisOznaczen}}
+    {
+        \renewcommand{\nomname}{Spis oznaczeń}
+        \phantomsection\printnomenclature
+        \addcontentsline{toc}{chapter}{\nomname}
+        \clearpage{\pagestyle{empty}\cleardoublepage}
+    }
+    {}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+    % Zapamiętanie nr strony, na której kończą się spisy w liczniku EndOfTOC (by zasadnicza część pracy rozpoczynała się od tego nr)
+    \setcounter{EndOfTOC}{\value{page}}
