@@ -1,19 +1,19 @@
 # Fdb version 4
-["bibtex PracaDyplomowa"] 1705431189 "PracaDyplomowa.aux" "PracaDyplomowa.bbl" "PracaDyplomowa" 1705431192 0
+["bibtex PracaDyplomowa"] 1705528142 "PracaDyplomowa.aux" "PracaDyplomowa.bbl" "PracaDyplomowa" 1705528146 0
   "./Bibliografia.bib" 1705337225 3324 80a39bb0f323046af94f4169130c6ab4 ""
   "C:/Users/szymo/AppData/Local/Programs/MiKTeX/bibtex/bst/gustlib/plunsrt.bst" 1002109236 18021 a392aee875c73bebac3505fa3eadcd87 ""
-  "PracaDyplomowa.aux" 1705431191 30350 fb677670f66ee0214cfe675e1f39c60c "pdflatex"
+  "PracaDyplomowa.aux" 1705528145 30487 d41226e185ca31e6b2ceba85b384c55a "pdflatex"
   (generated)
   "PracaDyplomowa.bbl"
   "PracaDyplomowa.blg"
   (rewritten before read)
-["makeindex PracaDyplomowa.idx"] 1705430364 "PracaDyplomowa.idx" "PracaDyplomowa.ind" "PracaDyplomowa" 1705431192 0
-  "PracaDyplomowa.idx" 1705431189 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+["makeindex PracaDyplomowa.idx"] 1705430364 "PracaDyplomowa.idx" "PracaDyplomowa.ind" "PracaDyplomowa" 1705528146 0
+  "PracaDyplomowa.idx" 1705528143 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
   "PracaDyplomowa.ilg"
   "PracaDyplomowa.ind"
   (rewritten before read)
-["pdflatex"] 1705431189 "e:/NAUKA/STUDIA/Praca Inżynierska/FORMATKA/PracaDyplomowa-PU12-20240115 (1)/PracaDyplomowa.tex" "PracaDyplomowa.pdf" "PracaDyplomowa" 1705431192 0
+["pdflatex"] 1705528142 "e:/NAUKA/STUDIA/Praca Inżynierska/FORMATKA/PracaDyplomowa-PU12-20240115 (1)/PracaDyplomowa.tex" "PracaDyplomowa.pdf" "PracaDyplomowa" 1705528146 0
   "C:/Users/szymo/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1705331432 97087 5650621aec09278cb1e7c0426d86bdfd ""
   "C:/Users/szymo/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1701866200 24213231 1b32bb0ea68620bb12712e217a55ecca ""
   "C:/Users/szymo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/carlito/crlt_j4hweq.enc" 1664973908 3199 785d1f4f03ee0bb70108af8679871db0 ""
@@ -162,24 +162,25 @@
   "Ilustracje/timeline2.png" 1705351144 23596 d3c03e7d1a18f447ddb627b10d8c5e09 ""
   "Ilustracje/uklad1.jpg" 1704724454 1615507 45b84b2dc2426bd85aca27b15064b657 ""
   "Ilustracje/uklad_pogladowy.png" 1704230052 113469 82a8ef44e9abac659cde76f846c08b8f ""
+  "Ilustracje/ukladideowy.png" 1705528023 192999 15a0af7fa94d406d27c7218de6a6b01a ""
   "Ilustracje/ukladkoncowy.jpeg" 1704835233 1858152 f4b8e620c780026e4cf9b3c4f11da0de ""
   "Konfiguracja.tex" 1705429556 5982 3161f8815b321004c4e9eef8eb3250f5 ""
-  "PracaDyplomowa.aux" 1705431191 30350 fb677670f66ee0214cfe675e1f39c60c "pdflatex"
-  "PracaDyplomowa.bbl" 1705431189 2629 35a1244d10019537d445be4ece8313f7 "bibtex PracaDyplomowa"
+  "PracaDyplomowa.aux" 1705528145 30487 d41226e185ca31e6b2ceba85b384c55a "pdflatex"
+  "PracaDyplomowa.bbl" 1705528142 2629 35a1244d10019537d445be4ece8313f7 "bibtex PracaDyplomowa"
   "PracaDyplomowa.ind" 1705430364 0 d41d8cd98f00b204e9800998ecf8427e "makeindex PracaDyplomowa.idx"
-  "PracaDyplomowa.lof" 1705431191 2648 164e5feae3f88aa688a12e4689ee4448 "pdflatex"
-  "PracaDyplomowa.lot" 1705431191 535 12df7b1108491bb3f6740e38d77447e2 "pdflatex"
-  "PracaDyplomowa.tex" 1705431184 9400 978fb0a0532c1fe1d19cf6507e0d03a0 ""
-  "PracaDyplomowa.toc" 1705431191 4667 a75dc298ef0a8e85f394b2c733ff79aa "pdflatex"
-  "Rozdzial1.tex" 1704726319 4745 f4a313c9e7ac538f609b86f807e14049 ""
-  "Rozdzial2.tex" 1705334004 5279 d55d854ed3c7cc67d21cf4a0f57b9196 ""
-  "Rozdzial3.tex" 1705335180 12608 1a410005c73fb0bf3ac920fd81831c55 ""
-  "Rozdzial4.tex" 1705337625 6981 caba385acb6313534c9e1d17e7775b05 ""
+  "PracaDyplomowa.lof" 1705528145 2744 18066dfcd7a9a8d385cd0b02b820b4bc "pdflatex"
+  "PracaDyplomowa.lot" 1705528145 535 3dfdd95178a08b82f77881d66c759858 "pdflatex"
+  "PracaDyplomowa.tex" 1705518751 9688 98d30873e27dc3e9d6d9b858188c3955 ""
+  "PracaDyplomowa.toc" 1705528145 4668 3968f3918f513888456a25b88beeb061 "pdflatex"
+  "Rozdzial1.tex" 1705516641 4745 854e3e24f308aa77581004443434d029 ""
+  "Rozdzial2.tex" 1705521677 6261 2b80732bd498855bbe27075bbfbbcdbb ""
+  "Rozdzial3.tex" 1705518887 12625 988edeedca874f856a8b7f726fbfcd71 ""
+  "Rozdzial4.tex" 1705528138 7131 13736b433ccbfc4a99d7ce2f7c9a7001 ""
   "Rozdzial5.tex" 1705351195 12964 4c63679e78a52c4276dddf6d28c2e493 ""
   "Rozdzial6.tex" 1705357574 4708 66a99406df672a5187487027e4878f2b ""
   "Rozdzial7.tex" 1705336151 4649 460c85a2250d1992119edb11362a2657 ""
   "Rozdzial8.tex" 1704889469 1521 8918aaed13574663d1dc919d35025639 ""
-  "e:/NAUKA/STUDIA/Praca Inżynierska/FORMATKA/PracaDyplomowa-PU12-20240115 (1)/PracaDyplomowa.tex" 1705431184 9400 978fb0a0532c1fe1d19cf6507e0d03a0 ""
+  "e:/NAUKA/STUDIA/Praca Inżynierska/FORMATKA/PracaDyplomowa-PU12-20240115 (1)/PracaDyplomowa.tex" 1705518751 9688 98d30873e27dc3e9d6d9b858188c3955 ""
   (generated)
   "PracaDyplomowa.aux"
   "PracaDyplomowa.idx"

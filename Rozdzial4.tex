@@ -16,9 +16,13 @@ Układ ma na celu dostarczenie narzędzia do kompleksowego monitorowania paramet
 \end{figure}
 
 Układ został celowo zaprojektowany w minimalistycznym stylu, aby umożliwić wygodne przymocowanie do rękawiczki, którą nosi osoba badana. Jego kompaktowa forma i lekka konstrukcja pozwalają na swobodne użytkowanie, minimalizując jednocześnie wpływ na naturalne ruchy i komfort badanego. Wszystkie wykorzystane technologie, takie jak mikrokontroler Arduino Nano, czujnik pulsoksymetryczny MAX30102, czy wyświetlacz OLED 128x64, zostały dokładnie opisane w poprzednich sekcjach. Dzięki takiemu podejściu, układ spełnia funkcję efektywnego narzędzia do zbierania danych fizjologicznych, zachowując jednocześnie prostotę i praktyczność w użyciu.
-
+\begin{figure}[!htb]
+  \centering
+  \includegraphics[width=.9\linewidth]{ukladideowy.png}
+  \caption{Schemat ideowy}
+\end{figure}
 \section{Wykorzystane technologie}
-Stworzony został kompleksowy układ pomiarowy, umożliwiający zbieranie danych dotyczących czasu reakcji, saturacji krwi i fali tętna. Poniżej przedstawiono szczegółowy opis implementacji poszczególnych komponentów układu:
+Zaprojektowany i wykonany został kompleksowy układ pomiarowy, umożliwiający akwizycję danych dotyczących czasu reakcji, saturacji krwi i fali tętna. Poniżej przedstawiono szczegółowy opis implementacji poszczególnych komponentów układu:
 \subsection{Komponenty fizyczne}
 \begin{itemize}
   \item Mikrokontroler Arduino Nano: Układ sterujący oparty na mikrokontrolerze Arduino Nano, charakteryzującym się kompaktowym designem i wysoką wydajnością. Odpowiada za odbiór danych z czujnika MAX30102, ich efektywne przetwarzanie oraz kontrolę wyświetlacza OLED

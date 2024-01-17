@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.12.6)  16 JAN 2024 19:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.12.6)  17 JAN 2024 22:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -660,12 +660,7 @@ Package caption Info: End \AtBeginDocument code.
 Package: inputenc 2021/02/14 v1.3d Input encoding file
 \inpenc@prehook=\toks28
 \inpenc@posthook=\toks29
-)
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\newline' on input line 56.
-
-(CzescPoczatkowa.tex
+) (CzescPoczatkowa.tex
 <./Ilustracje/politechnika_sl_logo_bw_pion_pl_rgb.png, id=3, 409.7709pt x 547.8066pt>
 File: ./Ilustracje/politechnika_sl_logo_bw_pion_pl_rgb.png Graphic file (type png)
 <use ./Ilustracje/politechnika_sl_logo_bw_pion_pl_rgb.png>
@@ -685,19 +680,19 @@ LaTeX Font Warning: Font shape `OT4/Crlt-OsF/b/sc' undefined
 
 
 {C:/Users/szymo/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/szymo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plrm.enc} <./Ilustracje/politechnika_sl_logo_bw_pion_pl_rgb.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 57--58
-
- []
-
-
 Underfull \vbox (badness 3612) has occurred while \output is active []
 
  [2]
+Underfull \vbox (badness 2088) has occurred while \output is active []
+
+
 
 LaTeX Font Warning: Font shape `OT4/Crlt-OsF/m/sl' undefined
 (Font)              using `OT4/Crlt-OsF/m/n' instead on input line 61.
 
-[3] [4
+[3] [4] [5
+
+] [6
 
 ] (PracaDyplomowa.toc
 LaTeX Font Info:    Trying to load font information for OML+plm on input line 1.
@@ -718,13 +713,11 @@ LaTeX Font Info:    External font `plex10' loaded for size
 (Font)              <8> on input line 1.
 LaTeX Font Info:    External font `plex10' loaded for size
 (Font)              <6> on input line 1.
- [5
-
-] [6])
+ [7] [8])
 \tf@toc=\write6
 \openout6 = `PracaDyplomowa.toc'.
 
- [7] [8
+ [9] [10
 
 
 ] (PracaDyplomowa.lof
@@ -736,26 +729,31 @@ LaTeX Font Warning: Font shape `OT4/Crlt-OsF/m/it' undefined
 \tf@lof=\write7
 \openout7 = `PracaDyplomowa.lof'.
 
- [9] [10
+ [11] [12
 
 
 ] (PracaDyplomowa.lot)
 \tf@lot=\write8
 \openout8 = `PracaDyplomowa.lot'.
 
- [11] [12
+ [13] [14
 
 
 ]) (Rozdzial1.tex
 Rozdzia\PlPrIeC {\l } 1.
-[13
+[15
 
 
 ]
 LaTeX Font Info:    Trying to load font information for TS1+Crlt-OsF on input line 19.
  (C:\Users\szymo\AppData\Local\Programs\MiKTeX\tex/latex/carlito\ts1crlt-osf.fd
 File: TS1Crlt-OsF.fd 2022/10/05 (autoinst) Font definitions for TS1/Crlt-OsF.
-) [14{C:/Users/szymo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/carlito/crlt_j4hweq.enc}]) [15] [16
+)
+Overfull \hbox (3.47847pt too wide) in paragraph at lines 21--22
+[]\OT4/Crlt-OsF/m/sl/12 Wprowadzenie no-wych wsp�-czyn-ni-k�w ana-li-zy zdro-wia: Za-pro-po-no-wa-no wpro-
+ []
+
+[16{C:/Users/szymo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/carlito/crlt_j4hweq.enc}]) [17] [18
 
 
 ] (Rozdzial2.tex
@@ -765,53 +763,52 @@ Overfull \hbox (15.76428pt too wide) in paragraph at lines 2--2
 []\OT4/Crlt-OsF/b/n/17.28 Zachowanie or-ga-ni-zmu w stre-fie �mier-ci Hi-ma-la-j�w: Wp�yw
  []
 
-[17
+[19
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [18]
-<./Ilustracje/badaniaSPO2.png, id=251, 310.15875pt x 226.59656pt>
+ [20]
+<./Ilustracje/badaniaSPO2.png, id=262, 310.15875pt x 226.59656pt>
 File: ./Ilustracje/badaniaSPO2.png Graphic file (type png)
 <use ./Ilustracje/badaniaSPO2.png>
-Package pdftex.def Info: ./Ilustracje/badaniaSPO2.png  used on input line 27.
+Package pdftex.def Info: ./Ilustracje/badaniaSPO2.png  used on input line 29.
 (pdftex.def)             Requested size: 298.75264pt x 218.26321pt.
-) [19 <./Ilustracje/badaniaSPO2.png>] [20
-
-
-] (Rozdzial3.tex
+) [21] [22 <./Ilustracje/badaniaSPO2.png>] (Rozdzial3.tex
 Rozdzia\PlPrIeC {\l } 3.
-<./Ilustracje/mvp_model.png, id=266, 508.90125pt x 178.41656pt>
+<./Ilustracje/mvp_model.png, id=277, 508.90125pt x 178.41656pt>
 File: ./Ilustracje/mvp_model.png Graphic file (type png)
 <use ./Ilustracje/mvp_model.png>
 Package pdftex.def Info: ./Ilustracje/mvp_model.png  used on input line 13.
 (pdftex.def)             Requested size: 384.10962pt x 134.66963pt.
-[21
+[23
 
-] [22 <./Ilustracje/mvp_model.png>]
-<./Ilustracje/ekran_startowy.png, id=279, 569.12625pt x 319.1925pt>
+
+
+] [24 <./Ilustracje/mvp_model.png>]
+<./Ilustracje/ekran_startowy.png, id=290, 569.12625pt x 319.1925pt>
 File: ./Ilustracje/ekran_startowy.png Graphic file (type png)
 <use ./Ilustracje/ekran_startowy.png>
 Package pdftex.def Info: ./Ilustracje/ekran_startowy.png  used on input line 39.
 (pdftex.def)             Requested size: 384.10962pt x 215.43588pt.
-<./Ilustracje/ekran_poziomu.png, id=280, 568.37344pt x 316.18124pt>
+<./Ilustracje/ekran_poziomu.png, id=291, 568.37344pt x 316.18124pt>
 File: ./Ilustracje/ekran_poziomu.png Graphic file (type png)
 <use ./Ilustracje/ekran_poziomu.png>
 Package pdftex.def Info: ./Ilustracje/ekran_poziomu.png  used on input line 46.
 (pdftex.def)             Requested size: 384.10962pt x 213.6833pt.
- [23] [24 <./Ilustracje/ekran_startowy.png> <./Ilustracje/ekran_poziomu.png>]
-<./Ilustracje/ekran_badania.png, id=292, 567.62062pt x 287.57437pt>
+ [25] [26 <./Ilustracje/ekran_startowy.png> <./Ilustracje/ekran_poziomu.png>]
+<./Ilustracje/ekran_badania.png, id=304, 567.62062pt x 287.57437pt>
 File: ./Ilustracje/ekran_badania.png Graphic file (type png)
 <use ./Ilustracje/ekran_badania.png>
 Package pdftex.def Info: ./Ilustracje/ekran_badania.png  used on input line 56.
 (pdftex.def)             Requested size: 384.10962pt x 194.60895pt.
- [25 <./Ilustracje/ekran_badania.png>]
-<./Ilustracje/baza_danych.png, id=301, 222.07968pt x 101.62968pt>
+ [27 <./Ilustracje/ekran_badania.png>]
+<./Ilustracje/baza_danych.png, id=312, 222.07968pt x 101.62968pt>
 File: ./Ilustracje/baza_danych.png Graphic file (type png)
 <use ./Ilustracje/baza_danych.png>
 Package pdftex.def Info: ./Ilustracje/baza_danych.png  used on input line 68.
 (pdftex.def)             Requested size: 384.10962pt x 175.7921pt.
-<./Ilustracje/ekran_wyniki.png, id=302, 567.62062pt x 320.69812pt>
+<./Ilustracje/ekran_wyniki.png, id=313, 567.62062pt x 320.69812pt>
 File: ./Ilustracje/ekran_wyniki.png Graphic file (type png)
 <use ./Ilustracje/ekran_wyniki.png>
 Package pdftex.def Info: ./Ilustracje/ekran_wyniki.png  used on input line 76.
@@ -819,12 +816,12 @@ Package pdftex.def Info: ./Ilustracje/ekran_wyniki.png  used on input line 76.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [26 <./Ilustracje/baza_danych.png>]
+ [28 <./Ilustracje/baza_danych.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [27 <./Ilustracje/ekran_wyniki.png>]) [28] (Rozdzial4.tex
+ [29 <./Ilustracje/ekran_wyniki.png>]) [30] (Rozdzial4.tex
 Rozdzia\PlPrIeC {\l } 4.
-<./Ilustracje/uklad_pogladowy.png, id=319, 727.96968pt x 310.91156pt>
+<./Ilustracje/uklad_pogladowy.png, id=330, 727.96968pt x 310.91156pt>
 File: ./Ilustracje/uklad_pogladowy.png Graphic file (type png)
 <use ./Ilustracje/uklad_pogladowy.png>
 Package pdftex.def Info: ./Ilustracje/uklad_pogladowy.png  used on input line 14.
@@ -837,102 +834,107 @@ LaTeX Font Warning: Font shape `OT4/Crlt-OsF/m/it' undefined
 LaTeX Font Warning: Font shape `OT4/Crlt-OsF/m/it' undefined
 (Font)              using `OT4/Crlt-OsF/m/sl' instead on input line 15.
 
-[29
+<./Ilustracje/ukladideowy.png, id=331, 996.72375pt x 462.22687pt>
+File: ./Ilustracje/ukladideowy.png Graphic file (type png)
+<use ./Ilustracje/ukladideowy.png>
+Package pdftex.def Info: ./Ilustracje/ukladideowy.png  used on input line 21.
+(pdftex.def)             Requested size: 384.10962pt x 178.12364pt.
+[31
 
 
 
  <./Ilustracje/uklad_pogladowy.png>]
-<./Ilustracje/arduino.png, id=325, 591.71063pt x 312.41719pt>
+<./Ilustracje/arduino.png, id=338, 591.71063pt x 312.41719pt>
 File: ./Ilustracje/arduino.png Graphic file (type png)
 <use ./Ilustracje/arduino.png>
-Package pdftex.def Info: ./Ilustracje/arduino.png  used on input line 27.
+Package pdftex.def Info: ./Ilustracje/arduino.png  used on input line 31.
 (pdftex.def)             Requested size: 298.75264pt x 157.74321pt.
-<./Ilustracje/max30102.png, id=328, 607.51968pt x 197.98969pt>
+<./Ilustracje/max30102.png, id=341, 607.51968pt x 197.98969pt>
 File: ./Ilustracje/max30102.png Graphic file (type png)
 <use ./Ilustracje/max30102.png>
-Package pdftex.def Info: ./Ilustracje/max30102.png  used on input line 33.
+Package pdftex.def Info: ./Ilustracje/max30102.png  used on input line 37.
 (pdftex.def)             Requested size: 298.75264pt x 97.3632pt.
- [30 <./Ilustracje/arduino.png>]
-<./Ilustracje/uklad1.jpg, id=336, 4047.12pt x 3035.34pt>
+ [32 <./Ilustracje/ukladideowy.png>]
+<./Ilustracje/uklad1.jpg, id=349, 4047.12pt x 3035.34pt>
 File: ./Ilustracje/uklad1.jpg Graphic file (type jpg)
 <use ./Ilustracje/uklad1.jpg>
-Package pdftex.def Info: ./Ilustracje/uklad1.jpg  used on input line 41.
+Package pdftex.def Info: ./Ilustracje/uklad1.jpg  used on input line 45.
 (pdftex.def)             Requested size: 298.75264pt x 224.02806pt.
- [31 <./Ilustracje/max30102.png> <./Ilustracje/uklad1.jpg>] (C:\Users\szymo\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
+ [33 <./Ilustracje/arduino.png> <./Ilustracje/max30102.png> <./Ilustracje/uklad1.jpg>] (C:\Users\szymo\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2023/02/27 1.9 listings language file
 ) (C:\Users\szymo\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
 )
-LaTeX Font Info:    Trying to load font information for OT4+cmtt on input line 48.
+LaTeX Font Info:    Trying to load font information for OT4+cmtt on input line 52.
  (C:\Users\szymo\AppData\Local\Programs\MiKTeX\tex/latex/polski\ot4cmtt.fd
 File: ot4cmtt.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
-<./Ilustracje/pudełko1.png, id=345, 511.9125pt x 390.70969pt>
+<./Ilustracje/pudełko1.png, id=357, 511.9125pt x 390.70969pt>
 File: ./Ilustracje/pudełko1.png Graphic file (type png)
 <use ./Ilustracje/pudełko1.png>
-Package pdftex.def Info: ./Ilustracje/pudełko1.png  used on input line 55.
+Package pdftex.def Info: ./Ilustracje/pudełko1.png  used on input line 59.
 (pdftex.def)             Requested size: 298.75264pt x 228.01874pt.
-<./Ilustracje/pudełko2.png, id=346, 750.55406pt x 416.30531pt>
+<./Ilustracje/pudełko2.png, id=358, 750.55406pt x 416.30531pt>
 File: ./Ilustracje/pudełko2.png Graphic file (type png)
 <use ./Ilustracje/pudełko2.png>
-Package pdftex.def Info: ./Ilustracje/pudełko2.png  used on input line 61.
+Package pdftex.def Info: ./Ilustracje/pudełko2.png  used on input line 65.
 (pdftex.def)             Requested size: 341.43439pt x 189.38109pt.
-<./Ilustracje/ukladkoncowy.jpeg, id=347, 4047.12pt x 3035.34pt>
+<./Ilustracje/ukladkoncowy.jpeg, id=359, 4047.12pt x 3035.34pt>
 File: ./Ilustracje/ukladkoncowy.jpeg Graphic file (type jpg)
 <use ./Ilustracje/ukladkoncowy.jpeg>
-Package pdftex.def Info: ./Ilustracje/ukladkoncowy.jpeg  used on input line 67.
+Package pdftex.def Info: ./Ilustracje/ukladkoncowy.jpeg  used on input line 71.
 (pdftex.def)             Requested size: 341.43439pt x 256.03207pt.
- [32{C:/Users/szymo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/pltt.enc} <./Ilustracje/pudełko1.png>]) [33 <./Ilustracje/pudełko2.png>] [34 <./Ilustracje/ukladkoncowy.jpeg>] (Rozdzial5.tex
+ [34{C:/Users/szymo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/pltt.enc}]) [35 <./Ilustracje/pudełko1.png> <./Ilustracje/pudełko2.png>] [36 <./Ilustracje/ukladkoncowy.jpeg>] (Rozdzial5.tex
 Rozdzia\PlPrIeC {\l } 5.
-[35
+[37
 
 
 
 ]
-<./Ilustracje/timeline2.png, id=367, 726.46407pt x 252.19218pt>
+<./Ilustracje/timeline2.png, id=381, 726.46407pt x 252.19218pt>
 File: ./Ilustracje/timeline2.png Graphic file (type png)
 <use ./Ilustracje/timeline2.png>
 Package pdftex.def Info: ./Ilustracje/timeline2.png  used on input line 26.
 (pdftex.def)             Requested size: 384.10962pt x 133.34566pt.
- [36]
-<./Ilustracje/albert.png, id=372, 354.57469pt x 474.27188pt>
+ [38]
+<./Ilustracje/albert.png, id=386, 354.57469pt x 474.27188pt>
 File: ./Ilustracje/albert.png Graphic file (type png)
 <use ./Ilustracje/albert.png>
 Package pdftex.def Info: ./Ilustracje/albert.png  used on input line 38.
 (pdftex.def)             Requested size: 213.39568pt x 285.44098pt.
- [37 <./Ilustracje/timeline2.png>] [38 <./Ilustracje/albert.png>] [39]) [40] [41] [42
+ [39 <./Ilustracje/timeline2.png>] [40 <./Ilustracje/albert.png>] [41]) [42] [43] [44
 
 
 ] (Rozdzial6.tex
 Rozdzia\PlPrIeC {\l } 6.
-<./Ilustracje/tetno.jpg, id=400, 362.007pt x 217.467pt>
+<./Ilustracje/tetno.jpg, id=414, 362.007pt x 217.467pt>
 File: ./Ilustracje/tetno.jpg Graphic file (type jpg)
 <use ./Ilustracje/tetno.jpg>
 Package pdftex.def Info: ./Ilustracje/tetno.jpg  used on input line 8.
 (pdftex.def)             Requested size: 384.10962pt x 230.74617pt.
-[43
+[45
 
 ]
-<./Ilustracje/saturacja.jpg, id=406, 362.007pt x 217.467pt>
+<./Ilustracje/saturacja.jpg, id=419, 362.007pt x 217.467pt>
 File: ./Ilustracje/saturacja.jpg Graphic file (type jpg)
 <use ./Ilustracje/saturacja.jpg>
 Package pdftex.def Info: ./Ilustracje/saturacja.jpg  used on input line 15.
 (pdftex.def)             Requested size: 384.10962pt x 230.74617pt.
- [44 <./Ilustracje/tetno.jpg>]) [45 <./Ilustracje/saturacja.jpg>] [46
+ [46 <./Ilustracje/tetno.jpg>]) [47 <./Ilustracje/saturacja.jpg>] [48
 
 
 ] (Rozdzial7.tex
 Rozdzia\PlPrIeC {\l } 7.
-[47
+[49
 
-] [48]) [49] [50
+] [50]) [51] [52
 
 
 ] (Rozdzial8.tex
 Rozdzia\PlPrIeC {\l } 8.
-) [51
+) [53
 
-] [52
+] [54
 
 
 ] (PracaDyplomowa.bbl
@@ -960,7 +962,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--18
 \OT4/cmtt/m/n/12 order _ list . order _ list _ main . 34 . 462c1c249SmMPK & gatewayAdapt =
  []
 
-[53
+[55
 
 ]
 
@@ -975,20 +977,20 @@ LaTeX Font Warning: Font shape `OT4/Crlt-OsF/m/it' undefined
 LaTeX Font Warning: Font shape `OT4/Crlt-OsF/m/it' undefined
 (Font)              using `OT4/Crlt-OsF/m/sl' instead on input line 61.
 
-) [54] (Dodatek1.tex
+) [56] (Dodatek1.tex
 Dodatek A.
-) [55
+) [57
 
 
 
-] [56
+] [58
 
 
 ] (Dodatek2.tex
 Dodatek B.
-) [57
+) [59
 
-] [58
+] [60
 
 
 ] (PracaDyplomowa.aux)
@@ -1002,17 +1004,17 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 17496 strings out of 474587
- 291940 string characters out of 5745702
+ 17507 strings out of 474587
+ 292249 string characters out of 5745702
  1961558 words of memory out of 5000000
- 39212 multiletter control sequences out of 15000+600000
+ 39220 multiletter control sequences out of 15000+600000
  564476 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  117i,12n,138p,1423b,1302s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/szymo/AppData/Local/Programs/MiKTeX/fonts/type1/google/carlito/Crlt-Regular.pfb><C:/Users/szymo/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr12.pfb><C:/Users/szymo/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr17.pfb><C:/Users/szymo/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/pltt12.pfb>
-Output written on PracaDyplomowa.pdf (58 pages, 5456571 bytes).
+Output written on PracaDyplomowa.pdf (60 pages, 5626806 bytes).
 PDF statistics:
- 707 PDF objects out of 1000 (max. 8388607)
- 147 named destinations out of 1000 (max. 500000)
- 528 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 720 PDF objects out of 1000 (max. 8388607)
+ 150 named destinations out of 1000 (max. 500000)
+ 533 words of extra memory for PDF output out of 10000 (max. 10000000)
 
